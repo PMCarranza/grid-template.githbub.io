@@ -1,0 +1,99 @@
+body{
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 100vh;
+    text-align: center;
+}
+
+.nav-bar-one{
+    grid-area: nav-bar-one;
+    background-color: lightpink;
+    padding: 2%;
+}
+
+.nav-bar-two{
+    grid-area: nav-bar-two;
+    background-color: lightblue;
+    padding: 2%;
+}
+
+.nav-bar-three{
+    grid-area: nav-bar-three;
+    background-color: lightcoral;
+    padding: 2%;
+}
+
+.nav-bar-four{
+    grid-area: nav-bar-four;
+    background-color: lightgreen;
+    padding: 2%;
+}
+
+.header{
+    grid-area: header; 
+    background-color: lightsteelblue;
+}
+
+.aside{
+    grid-area: aside;
+    background-color: lightyellow;
+}
+
+.main{
+    grid-area: main;
+    background-color: lightcyan;
+}
+
+.article-one{
+    grid-area: article-one;
+    background-color: lightgreen;
+}
+
+.article-two{
+    grid-area: article-two;
+    background-color: lightseagreen;
+}
+
+.article-three{
+    grid-area: article-three;
+    background-color: mediumaquamarine;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: palegoldenrod;
+}
+
+.container{
+    max-width: 100%;
+    /* height: 100%; */
+    display: grid;
+    grid-template-rows: repeat(22, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    gap: 4px 4px;
+    grid-template-areas:
+    ". nav-bar-one nav-bar-one . . . nav-bar-two nav-bar-two nav-bar-three nav-bar-three nav-bar-four nav-bar-four"
+    "header header header header header header header header header header header header"
+    "header header header header header header header header header header header header"
+    "header header header header header header header header header header header header"
+    "header header header header header header header header header header header header"
+    "aside aside aside aside main main main main main main main main"
+    "aside aside aside aside main main main main main main main main"
+    "aside aside aside aside main main main main main main main main"
+    "aside aside aside aside main main main main main main main main"
+    "aside aside aside aside main main main main main main main main"
+    "aside aside aside aside main main main main main main main main"
+    "aside aside aside aside main main main main main main main main"
+    "aside aside aside aside main main main main main main main main"
+    "article-one article-one article-one article-one article-one article-one article-one article-one article-one article-one article-one article-one"
+    "article-one article-one article-one article-one article-one article-one article-one article-one article-one article-one article-one article-one"
+    "article-one article-one article-one article-one article-one article-one article-one article-one article-one article-one article-one article-one"
+    "article-one article-one article-one article-one article-one article-one article-one article-one article-one article-one article-one article-one"
+    "article-two article-two article-two article-two article-two article-two article-two article-two article-two article-two article-two article-two"
+    "article-two article-two article-two article-two article-two article-two article-two article-two article-two article-two article-two article-two"
+    "article-three article-three article-three article-three article-three article-three article-three article-three article-three article-three article-three article-three"
+    "article-three article-three article-three article-three article-three article-three article-three article-three article-three article-three article-three article-three"
+    "footer footer footer footer footer footer footer footer footer footer footer footer"
+    ;
+}
